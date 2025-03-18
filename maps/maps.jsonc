@@ -1,0 +1,44 @@
+[
+  {
+    "name": "landing_site",
+    "location_size": 28,
+    "location_border_thickness": 4,
+    "img": "images/maps/Landing_Site.png"
+  },
+  {
+    "name": "nexus",
+    "location_size": 28,
+    "location_border_thickness": 4,
+    "img": "images/maps/Nexus.png"
+  },
+  {
+    "name": "aqueducts",
+    "location_size": 28,
+    "location_border_thickness": 4,
+    "img": "images/maps/Aqueducts.png"
+  },
+  {
+    "name": "heater_core",
+    "location_size": 28,
+    "location_border_thickness": 4,
+    "img": "images/maps/Heater_Core.png"
+  },
+  {
+    "name": "ventilation",
+    "location_size": 28,
+    "location_border_thickness": 4,
+    "img": "images/maps/Ventilation.png"
+  },
+  {
+    "name": "incubator",
+    "location_size": 28,
+    "location_border_thickness": 4,
+    "img": "images/maps/Incubator.png"
+  },
+  {
+    "name": "laboratory",
+    "location_size": 28,
+    "location_border_thickness": 4,
+    "img": "images/maps/Laboratory.png"
+  }
+]

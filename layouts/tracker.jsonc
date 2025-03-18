@@ -1,0 +1,95 @@
+{
+  "tracker_horizontal": {
+    "type": "container",
+    "background": "#000000",
+    "content": {
+      "type": "dock",
+      "dropshadow": true,
+      "content": [
+        {
+          "type": "dock",
+          "dock": "bottom",
+          "content": [
+            {
+              "type": "group",
+              "header": "Items",
+              "dock": "left",
+              "content": {
+                "type": "layout",
+                "key": "shared_item_grid"
+              }
+            }
+          ]
+        },
+        {
+          "type": "tabbed",
+          "tabs": [
+            {
+              "title": "Landing Site",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "landing_site"
+                ]
+              }
+            },
+            {
+              "title": "Nexus",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "nexus"
+                ]
+              }
+            },
+            {
+              "title": "Aqueducts",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "aqueducts"
+                ]
+              }
+            },
+            {
+              "title": "Heater Core",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "heater_core"
+                ]
+              }
+            },
+            {
+              "title": "Ventilation",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "ventilation"
+                ]
+              }
+            },
+            {
+              "title": "Incubator",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "incubator"
+                ]
+              }
+            },
+            {
+              "title": "Laboratory",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "laboratory"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "shared_item_grid": {
+    "type": "array",
+    "orientation": "vertical",
+    "margin": "0,0",
+    "content": [
+      {
+        "type": "array",
+        "orientation": "horizontal",
+        "margin": "0,0",
+        "content": [
+          {
+            "type": "itemgrid",
+            "item_margin": "10, 10",
+            "h_alignment": "left",
+            "rows": [
+              [
+                "missile",
+                "spin_jump",
+                "phase",
+                "coolant",
+                "decoder",
+                "bigshot",
+                "repeater",
+                "hopper"
+              ],
+              [
+                "aqueducts",
+                "heater_core",
+                "ventilation",
+                "completion"
+              ],
+              [
+                "cartridge",
+                "healthkit"
+              ]
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

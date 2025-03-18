@@ -1,0 +1,872 @@
+[
+  {
+    "name": "Landing Site",
+    "children": [
+      {
+        "name": "Missile",
+        "access_rules": [],
+        "sections": [
+          {
+            "chest_unopened_img": "images/checks/missile_0.png",
+            "chest_opened_img": "images/items/missile.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "landing_site",
+            "x": 253,
+            "y": 406
+          }
+        ]
+      },
+      {
+        "name": "West Healthkit",
+        "access_rules": [],
+        "sections": [
+          {
+            "chest_unopened_img": "images/checks/healthkit_0.png",
+            "chest_opened_img": "images/items/healthkit.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "landing_site",
+            "x": 98,
+            "y": 169
+          }
+        ]
+      },
+      {
+        "name": "East Healthkit",
+        "access_rules": [
+          "missile"
+        ],
+        "sections": [
+          {
+            "chest_unopened_img": "images/checks/healthkit_0.png",
+            "chest_opened_img": "images/items/healthkit.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "landing_site",
+            "x": 638,
+            "y": 327
+          }
+        ]
+      },
+      {
+        "name": "Bark Cartridge",
+        "access_rules": [
+          "missile"
+        ],
+        "sections": [
+          {
+            "chest_unopened_img": "images/checks/cartridge_0.png",
+            "chest_opened_img": "images/items/cartridge.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "landing_site",
+            "x": 215,
+            "y": 249
+          }
+        ]
+      },
+      {
+        "name": "Nicotine Cartridge",
+        "access_rules": [
+          "missile"
+        ],
+        "sections": [
+          {
+            "chest_unopened_img": "images/checks/cartridge_0.png",
+            "chest_opened_img": "images/items/cartridge.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "landing_site",
+            "x": 638,
+            "y": 249
+          }
+        ]
+      },
+      {
+        "name": "Decoder",
+        "access_rules": [
+          "missile,spin_jump,ventilation_3"
+        ],
+        "sections": [
+          {
+            "chest_unopened_img": "images/checks/decoder_0.png",
+            "chest_opened_img": "images/items/decoder.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "landing_site",
+            "x": 253,
+            "y": 129
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Nexus",
+    "access_rules": [
+      "missile"
+    ],
+    "children": [
+      {
+        "name": "West Healthkit",
+        "access_rules": [
+          "spin_jump"
+        ],
+        "sections": [
+          {
+            "chest_unopened_img": "images/checks/healthkit_0.png",
+            "chest_opened_img": "images/items/healthkit.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "nexus",
+            "x": 104,
+            "y": 327
+          }
+        ]
+      },
+      {
+        "name": "East Healthkit",
+        "access_rules": [
+          "spin_jump"
+        ],
+        "sections": [
+          {
+            "chest_unopened_img": "images/checks/healthkit_0.png",
+            "chest_opened_img": "images/items/healthkit.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "nexus",
+            "x": 637,
+            "y": 327
+          }
+        ]
+      },
+      {
+        "name": "Coffee Stain Cartridge",
+        "access_rules": [
+          "spin_jump"
+        ],
+        "sections": [
+          {
+            "chest_unopened_img": "images/checks/cartridge_0.png",
+            "chest_opened_img": "images/items/cartridge.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "nexus",
+            "x": 62,
+            "y": 327
+          }
+        ]
+      },
+      {
+        "name": "Urine Cartridge",
+        "access_rules": [
+          "spin_jump"
+        ],
+        "sections": [
+          {
+            "chest_unopened_img": "images/checks/cartridge_0.png",
+            "chest_opened_img": "images/items/cartridge.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "nexus",
+            "x": 267,
+            "y": 289
+          }
+        ]
+      },
+      {
+        "name": "Swamp Matcha Cartridge",
+        "access_rules": [
+          "$has_ventilation_event|3"
+        ],
+        "sections": [
+          {
+            "chest_unopened_img": "images/checks/cartridge_0.png",
+            "chest_opened_img": "images/items/cartridge.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "nexus",
+            "x": 555,
+            "y": 289
+          }
+        ]
+      },
+      {
+        "name": "Rebba",
+        "access_rules": [],
+        "sections": [
+          {
+            "name": "Repeater",
+            "chest_unopened_img": "images/checks/repeater_0.png",
+            "chest_opened_img": "images/items/repeater.png",
+            "item_count": 1,
+            "access_rules": [
+              "$has_at_least_n_cartridge|7"
+            ]
+          },
+          {
+            "name": "Hopper",
+            "chest_unopened_img": "images/checks/hopper_0.png",
+            "chest_opened_img": "images/items/hopper.png",
+            "item_count": 1,
+            "access_rules": [
+              "$has_at_least_n_cartridge|14"
+            ]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "nexus",
+            "x": 391,
+            "y": 406
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Aqueducts",
+    "access_rules": [
+      "missile"
+    ],
+    "children": [
+      {
+        "name": "West Healthkit",
+        "access_rules": [
+          "$has_aqueducts_event|1"
+        ],
+        "sections": [
+          {
+            "chest_unopened_img": "images/checks/healthkit_0.png",
+            "chest_opened_img": "images/items/healthkit.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "aqueducts",
+            "x": 205,
+            "y": 199
+          }
+        ]
+      },
+      {
+        "name": "East Healthkit",
+        "access_rules": [
+          "$has_aqueducts_event|3,spin_jump"
+        ],
+        "sections": [
+          {
+            "chest_unopened_img": "images/checks/healthkit_0.png",
+            "chest_opened_img": "images/items/healthkit.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "aqueducts",
+            "x": 644,
+            "y": 199
+          }
+        ]
+      },
+      {
+        "name": "Port Cartridge",
+        "access_rules": [
+          "$has_aqueducts_event|3,spin_jump"
+        ],
+        "sections": [
+          {
+            "chest_unopened_img": "images/checks/cartridge_0.png",
+            "chest_opened_img": "images/items/cartridge.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "aqueducts",
+            "x": 314,
+            "y": 236
+          }
+        ]
+      },
+      {
+        "name": "Goop Cartridge",
+        "access_rules": [
+          "$has_aqueducts_event|3,spin_jump"
+        ],
+        "sections": [
+          {
+            "chest_unopened_img": "images/checks/cartridge_0.png",
+            "chest_opened_img": "images/items/cartridge.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "aqueducts",
+            "x": 460,
+            "y": 199
+          }
+        ]
+      },
+      {
+        "name": "Starboard Cartridge",
+        "access_rules": [
+          "$has_aqueducts_event|3,spin_jump"
+        ],
+        "sections": [
+          {
+            "chest_unopened_img": "images/checks/cartridge_0.png",
+            "chest_opened_img": "images/items/cartridge.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "aqueducts",
+            "x": 826,
+            "y": 199
+          }
+        ]
+      },
+      {
+        "name": "Spin Jump",
+        "access_rules": [
+          "$has_aqueducts_event|3"
+        ],
+        "sections": [
+          {
+            "chest_unopened_img": "images/checks/spin_jump_0.png",
+            "chest_opened_img": "images/items/spin_jump.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "aqueducts",
+            "x": 936,
+            "y": 347
+          }
+        ]
+      },
+      {
+        "name": "Progressive Aqueducts 1",
+        "access_rules": [],
+        "sections": [
+          {
+            "chest_unopened_img": "images/checks/treadmill_0.png",
+            "chest_opened_img": "images/items/treadmill.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "aqueducts",
+            "x": 131,
+            "y": 124
+          }
+        ]
+      },
+      {
+        "name": "Progressive Aqueducts 2",
+        "access_rules": [
+          "$has_aqueducts_event|1"
+        ],
+        "sections": [
+          {
+            "chest_unopened_img": "images/checks/treadmill_0.png",
+            "chest_opened_img": "images/items/treadmill.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "aqueducts",
+            "x": 607,
+            "y": 87
+          }
+        ]
+      },
+      {
+        "name": "Progressive Aqueducts 3",
+        "access_rules": [
+          "$has_aqueducts_event|2"
+        ],
+        "sections": [
+          {
+            "chest_unopened_img": "images/checks/treadmill_0.png",
+            "chest_opened_img": "images/items/treadmill.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "aqueducts",
+            "x": 753,
+            "y": 274
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Heater Core",
+    "access_rules": [
+      "spin_jump"
+    ],
+    "children": [
+      {
+        "name": "West Healthkit",
+        "access_rules": [
+          "$has_heater_core_event|3"
+        ],
+        "sections": [
+          {
+            "chest_unopened_img": "images/checks/healthkit_0.png",
+            "chest_opened_img": "images/items/healthkit.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "heater_core",
+            "x": 205,
+            "y": 327
+          }
+        ]
+      },
+      {
+        "name": "East Healthkit",
+        "access_rules": [
+          "$has_heater_core_event|3"
+        ],
+        "sections": [
+          {
+            "chest_unopened_img": "images/checks/healthkit_0.png",
+            "chest_opened_img": "images/items/healthkit.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "heater_core",
+            "x": 705,
+            "y": 170
+          }
+        ]
+      },
+      {
+        "name": "Virtual Cat Cartridge",
+        "access_rules": [
+          "$has_heater_core_event|3"
+        ],
+        "sections": [
+          {
+            "chest_unopened_img": "images/checks/cartridge_0.png",
+            "chest_opened_img": "images/items/cartridge.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "heater_core",
+            "x": 551,
+            "y": 407
+          }
+        ]
+      },
+      {
+        "name": "Meowtrix Cartridge",
+        "access_rules": [
+          "$has_heater_core_event|3"
+        ],
+        "sections": [
+          {
+            "chest_unopened_img": "images/checks/cartridge_0.png",
+            "chest_opened_img": "images/items/cartridge.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "heater_core",
+            "x": 205,
+            "y": 209
+          }
+        ]
+      },
+      {
+        "name": "Chewed Gum Cartridge",
+        "access_rules": [
+          "$has_heater_core_event|3"
+        ],
+        "sections": [
+          {
+            "chest_unopened_img": "images/checks/cartridge_0.png",
+            "chest_opened_img": "images/items/cartridge.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "heater_core",
+            "x": 781,
+            "y": 288
+          }
+        ]
+      },
+      {
+        "name": "Coolant",
+        "access_rules": [
+          "$has_heater_core_event|3"
+        ],
+        "sections": [
+          {
+            "chest_unopened_img": "images/checks/coolant_0.png",
+            "chest_opened_img": "images/items/coolant.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "heater_core",
+            "x": 90,
+            "y": 170
+          }
+        ]
+      },
+      {
+        "name": "Phase",
+        "access_rules": [
+          "$has_heater_core_event|1,$has_heater_core_event|2"
+        ],
+        "sections": [
+          {
+            "chest_unopened_img": "images/checks/phase_0.png",
+            "chest_opened_img": "images/items/phase.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "heater_core",
+            "x": 475,
+            "y": 209
+          }
+        ]
+      },
+      {
+        "name": "Progressive Heater Core 1",
+        "access_rules": [],
+        "sections": [
+          {
+            "chest_unopened_img": "images/checks/hotboy_1_0.png",
+            "chest_opened_img": "images/items/hotboy_1.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "heater_core",
+            "x": 52,
+            "y": 405
+          }
+        ]
+      },
+      {
+        "name": "Progressive Heater Core 2",
+        "access_rules": [
+          "$has_heater_core_event|1"
+        ],
+        "sections": [
+          {
+            "chest_unopened_img": "images/checks/hotboy_2_0.png",
+            "chest_opened_img": "images/items/hotboy_2.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "heater_core",
+            "x": 167,
+            "y": 170
+          }
+        ]
+      },
+      {
+        "name": "Progressive Heater Core 3",
+        "access_rules": [
+          "$has_heater_core_event|2"
+        ],
+        "sections": [
+          {
+            "chest_unopened_img": "images/checks/hot_tubes_0.png",
+            "chest_opened_img": "images/items/hot_tubes_1.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "heater_core",
+            "x": 52,
+            "y": 170
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Ventilation",
+    "access_rules": [
+      "$has_aqueducts_event|3,$has_heater_core_event|3"
+    ],
+    "children": [
+      {
+        "name": "Healthkit",
+        "access_rules": [
+          "$has_ventilation_event|1"
+        ],
+        "sections": [
+          {
+            "chest_unopened_img": "images/checks/healthkit_0.png",
+            "chest_opened_img": "images/items/healthkit.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "ventilation",
+            "x": 273,
+            "y": 255
+          }
+        ]
+      },
+      {
+        "name": "Gris Cartridge",
+        "access_rules": [
+          "$has_ventilation_event|3"
+        ],
+        "sections": [
+          {
+            "chest_unopened_img": "images/checks/cartridge_0.png",
+            "chest_opened_img": "images/items/cartridge.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "ventilation",
+            "x": 582,
+            "y": 176
+          }
+        ]
+      },
+      {
+        "name": "Grape Cartridge",
+        "access_rules": [
+          "$has_ventilation_event|3"
+        ],
+        "sections": [
+          {
+            "chest_unopened_img": "images/checks/cartridge_0.png",
+            "chest_opened_img": "images/items/cartridge.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "ventilation",
+            "x": 158,
+            "y": 334
+          }
+        ]
+      },
+      {
+        "name": "Bigshot",
+        "access_rules": [
+          "$has_ventilation_event|1"
+        ],
+        "sections": [
+          {
+            "chest_unopened_img": "images/checks/bigshot_0.png",
+            "chest_opened_img": "images/items/bigshot.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "ventilation",
+            "x": 621,
+            "y": 374
+          }
+        ]
+      },
+      {
+        "name": "Progressive Ventilation 1",
+        "access_rules": [],
+        "sections": [
+          {
+            "chest_unopened_img": "images/checks/button_0.png",
+            "chest_opened_img": "images/items/button.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "ventilation",
+            "x": 389,
+            "y": 137
+          }
+        ]
+      },
+      {
+        "name": "Progressive Ventilation 2",
+        "access_rules": [
+          "$has_ventilation_event|1"
+        ],
+        "sections": [
+          {
+            "chest_unopened_img": "images/checks/button_0.png",
+            "chest_opened_img": "images/items/button.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "ventilation",
+            "x": 389,
+            "y": 532
+          }
+        ]
+      },
+      {
+        "name": "Progressive Ventilation 3",
+        "access_rules": [
+          "$has_ventilation_event|2"
+        ],
+        "sections": [
+          {
+            "chest_unopened_img": "images/checks/button_0.png",
+            "chest_opened_img": "images/items/button.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "ventilation",
+            "x": 158,
+            "y": 492
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Incubator",
+    "access_rules": [
+      "decoder"
+    ],
+    "children": [
+      {
+        "name": "Healthkit",
+        "access_rules": [
+          "spin_jump,phase,hopper"
+        ],
+        "sections": [
+          {
+            "chest_unopened_img": "images/checks/healthkit_0.png",
+            "chest_opened_img": "images/items/healthkit.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "incubator",
+            "x": 683,
+            "y": 174
+          }
+        ]
+      },
+      {
+        "name": "Tamagato Cartridge",
+        "access_rules": [],
+        "sections": [
+          {
+            "chest_unopened_img": "images/checks/cartridge_0.png",
+            "chest_opened_img": "images/items/cartridge.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "incubator",
+            "x": 338,
+            "y": 174
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Laboratory",
+    "access_rules": [
+      "decoder"
+    ],
+    "children": [
+      {
+        "name": "Completion",
+        "access_rules": [],
+        "sections": [
+          {
+            "chest_unopened_img": "images/checks/completion_0.png",
+            "chest_opened_img": "images/items/completion.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "laboratory",
+            "x": 442,
+            "y": 406
+          }
+        ]
+      }
+    ]
+  }
+]

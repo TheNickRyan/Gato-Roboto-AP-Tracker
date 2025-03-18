@@ -1,0 +1,145 @@
+[
+  {
+    "name": "Missile",
+    "type": "toggle",
+    "img": "images/items/Missile.png",
+    "codes": "missile"
+  },
+  {
+    "name": "Spin Jump",
+    "type": "toggle",
+    "img": "images/items/Spin_Jump.png",
+    "codes": "spin_jump"
+  },
+  {
+    "name": "Phase",
+    "type": "toggle",
+    "img": "images/items/Phase.png",
+    "codes": "phase"
+  },
+  {
+    "name": "Coolant",
+    "type": "toggle",
+    "img": "images/items/Coolant.png",
+    "codes": "coolant"
+  },
+  {
+    "name": "Decoder",
+    "type": "toggle",
+    "img": "images/items/Decoder.png",
+    "codes": "decoder"
+  },
+  {
+    "name": "Bigshot",
+    "type": "toggle",
+    "img": "images/items/Bigshot.png",
+    "codes": "bigshot"
+  },
+  {
+    "name": "Repeater",
+    "type": "toggle",
+    "img": "images/items/Repeater.png",
+    "codes": "repeater"
+  },
+  {
+    "name": "Hopper",
+    "type": "toggle",
+    "img": "images/items/Hopper.png",
+    "codes": "hopper"
+  },
+  {
+    "name": "Completion",
+    "type": "toggle",
+    "img": "images/items/Completion.png",
+    "codes": "completion"
+  },
+  {
+		"name": "Cartridges",
+		"type": "consumable",
+		"img": "images/items/Cartridge.png",
+		"max_quantity": 14,
+		"initial_quantity": 0,
+		"overlay_background": "#000000",
+		"overlay_font_size": 10,
+		"codes": "cartridge"
+	},
+  {
+    "name": "Healthkits",
+    "type": "consumable",
+		"img": "images/items/Healthkit.png",
+		"max_quantity": 14,
+		"initial_quantity": 0,
+		"overlay_background": "#000000",
+		"overlay_font_size": 10,
+    "codes": "healthkit"
+  },
+  {
+    "name": "Progressive Aqueducts",
+    "type": "progressive",
+    "initial_stage_idx": 0,
+    "codes":"aqueducts",
+    "stages": [
+      {
+        "img": "images/items/Treadmill.png",
+        "codes": "aqueducts_1",
+        "inherit_codes": true
+      },
+      {
+        "img": "images/items/Treadmill.png",
+        "codes": "aqueducts_2",
+        "inherit_codes": true
+      },
+      {
+        "img": "images/items/Treadmill.png",
+        "codes": "aqueducts_3",
+        "inherit_codes": true
+      }
+    ]
+  },
+  {
+    "name": "Progressive Heater Core",
+    "type": "progressive",
+    "initial_stage_idx": 0,
+    "codes": "heater_core",
+    "stages": [
+      {
+        "img": "images/items/Hotboy_1.png",
+        "codes": "heater_1",
+        "inherit_codes": true
+      },
+      {
+        "img": "images/items/Hotboy_2.png",
+        "codes": "heater_2",
+        "inherit_codes": true
+      },
+      {
+        "img": "images/items/Hot_Tubes.png",
+        "codes": "heater_3",
+        "inherit_codes": true
+      }
+    ]
+  },
+  {
+    "name": "Progressive Ventilation",
+    "type": "progressive",
+    "initial_stage_idx": 0,
+    "codes": "ventilation",
+    "stages": [
+      {
+        "img": "images/items/Button.png",
+        "codes": "ventilation_1",
+        "inherit_codes": true
+      },
+      {
+        "img": "images/items/Button.png",
+        "codes": "ventilation_2",
+        "inherit_codes": true
+      },
+      {
+        "img": "images/items/Button.png",
+        "codes": "ventilation_3",
+        "inherit_codes": true
+      }
+    ]
+  }
+]
