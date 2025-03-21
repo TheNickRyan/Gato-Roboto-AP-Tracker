@@ -6,7 +6,7 @@ Visit the [**Issues Page**](https://github.com/TheNickRyan/Gato-Roboto-AP-Tracke
 
 View the [**Changelog**](https://github.com/TheNickRyan/Gato-Roboto-AP-Tracker/blob/master/CHANGELOG.md) for a full breakdown of version releases.
 
-## Prerequisites
+## Prerequisites 
 
 - [**PopTracker**](https://poptracker.github.io/)
 - [**Gato Roboto (Steam)**](https://store.steampowered.com/app/916730/Gato_Roboto/)
