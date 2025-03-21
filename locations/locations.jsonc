@@ -101,7 +101,7 @@
       {
         "name": "Decoder",
         "access_rules": [
-          "missile,spin_jump,ventilation_3"
+          "missile,spin_jump,$has_ventilation_event|3"
         ],
         "sections": [
           {
@@ -169,7 +169,7 @@
       {
         "name": "Coffee Stain Cartridge",
         "access_rules": [
-          "spin_jump"
+          "$has_aqueducts_event|3"
         ],
         "sections": [
           {
