@@ -81,7 +81,7 @@
       {
         "name": "Nicotine Cartridge",
         "access_rules": [
-          "missile"
+          "missile,spin_jump"
         ],
         "sections": [
           {
