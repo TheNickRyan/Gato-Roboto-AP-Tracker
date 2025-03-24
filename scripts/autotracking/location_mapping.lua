@@ -11,7 +11,7 @@ LOCATION_MAPPING = {
 	-- Nexus
 	[BASE_LOCATION_ID + 01014] = { { "@Nexus/West Healthkit/" } },
 	[BASE_LOCATION_ID + 02314] = { { "@Nexus/East Healthkit/" } },
-	[BASE_LOCATION_ID + 01214] = { { "@Nexus/Coffee Stain Cartridge/" } },
+	[BASE_LOCATION_ID + 00914] = { { "@Nexus/Coffee Stain Cartridge/" } },
 	[BASE_LOCATION_ID + 01413] = { { "@Nexus/Urine Cartridge/" } },
 	[BASE_LOCATION_ID + 02113] = { { "@Nexus/Swamp Matcha Cartridge/" } },
 	-- Rebba Cartridge Shop
@@ -19,7 +19,7 @@ LOCATION_MAPPING = {
 	[BASE_LOCATION_ID + 02716] = { { "@Nexus/Rebba/Hopper/" } },
 
 	-- Aqueducts
-	[BASE_LOCATION_ID + 00405] = { { "@Aqueducts/West Healthkit/" } },
+	[BASE_LOCATION_ID + 00406] = { { "@Aqueducts/West Healthkit/" } },
 	[BASE_LOCATION_ID + 01606] = { { "@Aqueducts/East Healthkit/" } },
 	[BASE_LOCATION_ID + 01106] = { { "@Aqueducts/Port Cartridge/" } },
 	[BASE_LOCATION_ID + 00707] = { { "@Aqueducts/Goop Cartridge/" } },
