@@ -42,13 +42,13 @@ LOCATION_MAPPING = {
 	[BASE_LOCATION_ID + 00015] = { { "@Heater Core/Progressive Heater Core 3/" } },
 
 	-- Ventilation
-	[BASE_LOCATION_ID + 00915] = { { "@Ventilation/Healthkit/" } },
-	[BASE_LOCATION_ID + 01613] = { { "@Ventilation/Gris Cartridge/" } },
-	[BASE_LOCATION_ID + 00517] = { { "@Ventilation/Grape Cartridge/" } },
-	[BASE_LOCATION_ID + 01718] = { { "@Ventilation/Bigshot/" } },
-	[BASE_LOCATION_ID + 01112] = { { "@Ventilation/Progressive Ventilation 1/" } },
-	[BASE_LOCATION_ID + 01122] = { { "@Ventilation/Progressive Ventilation 2/" } },
-	[BASE_LOCATION_ID + 00521] = { { "@Ventilation/Progressive Ventilation 3/" } },
+	[BASE_LOCATION_ID + 00816] = { { "@Ventilation/Healthkit/" } },
+	[BASE_LOCATION_ID + 01614] = { { "@Ventilation/Gris Cartridge/" } },
+	[BASE_LOCATION_ID + 00518] = { { "@Ventilation/Grape Cartridge/" } },
+	[BASE_LOCATION_ID + 01719] = { { "@Ventilation/Bigshot/" } },
+	[BASE_LOCATION_ID + 01113] = { { "@Ventilation/Progressive Ventilation 1/" } },
+	[BASE_LOCATION_ID + 01123] = { { "@Ventilation/Progressive Ventilation 2/" } },
+	[BASE_LOCATION_ID + 00522] = { { "@Ventilation/Progressive Ventilation 3/" } },
 
 	-- Incubator
 	[BASE_LOCATION_ID + 02413] = { { "@Incubator/Healthkit/" } },
