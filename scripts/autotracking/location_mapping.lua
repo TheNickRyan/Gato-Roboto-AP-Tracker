@@ -26,7 +26,7 @@ LOCATION_MAPPING = {
 	[BASE_LOCATION_ID + 02105] = { { "@Aqueducts/Starboard Cartridge/" } },
 	[BASE_LOCATION_ID + 02410] = { { "@Aqueducts/Spin Jump/" } },
 	[BASE_LOCATION_ID + 00204] = { { "@Aqueducts/Progressive Aqueducts 1/" } },
-	[BASE_LOCATION_ID + 01503] = { { "@Aqueducts/Progressive Aqueducts 2/" } },
+	[BASE_LOCATION_ID + 01603] = { { "@Aqueducts/Progressive Aqueducts 2/" } },
 	[BASE_LOCATION_ID + 01908] = { { "@Aqueducts/Progressive Aqueducts 3/" } },
 
 	-- Heater Core
