@@ -226,14 +226,28 @@ end
 
 -- Bounce
 function onBounce(json)
-	if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
-		print(string.format("called onBounce: %s", dump_table(json)))
+	local data = json["data"]
+	if data then
+			if data["type"] == "MapUpdate" then
+					updateMap(data["mapId"])
+			end
 	end
-	-- No Implementation Yet
+end
+
+function updateMap(mapId)
+	if has("auto_tab_on") then
+			local tabs = TAB_MAPPING[mapId]
+			if tabs then
+					for _, tab in ipairs(tabs) do
+							Tracker:UiHint("ActivateTab", tab)
+					end
+			end
+	end
 end
 
 -- AP Callbacks
 Archipelago:AddClearHandler("clear handler", onClear)
+Archipelago:AddBouncedHandler("bounce handler", onBounce)
 
 if AUTOTRACKER_ENABLE_ITEM_TRACKING then
 	Archipelago:AddItemHandler("item handler", onItem)
@@ -245,4 +259,4 @@ end
 
 -- Archipelago:AddScoutHandler("scout handler", onScout)
 
--- Archipelago:AddBouncedHandler("bounce handler", onBounce)
+
