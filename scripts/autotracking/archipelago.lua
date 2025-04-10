@@ -1,5 +1,6 @@
 ScriptHost:LoadScript("scripts/autotracking/item_mapping.lua")
 ScriptHost:LoadScript("scripts/autotracking/location_mapping.lua")
+ScriptHost:LoadScript("scripts/autotracking/tab_mapping.lua")
 
 CUR_INDEX = -1
 LOCAL_ITEMS = {}
@@ -228,34 +229,29 @@ end
 function onBounce(json)
 	local data = json["data"]
 	if data then
-			if data["type"] == "MapUpdate" then
-					updateMap(data["mapId"])
-			end
+		if data["type"] == "MapUpdate" then
+			updateMap(data["mapId"])
+		end
 	end
 end
 
 function updateMap(mapId)
-	if has("auto_tab_on") then
-			local tabs = TAB_MAPPING[mapId]
-			if tabs then
-					for _, tab in ipairs(tabs) do
-							Tracker:UiHint("ActivateTab", tab)
-					end
-			end
+	local a = Tracker:FindObjectForCode("auto_tab_on")
+  ---@cast a JsonItem
+  local val = (a.CurrentStage == 1)
+	if val then
+		local tab = TAB_MAPPING[mapId]
+		if tab then
+			Tracker:UiHint("ActivateTab", tab)
+		end
 	end
 end
 
 -- AP Callbacks
 Archipelago:AddClearHandler("clear handler", onClear)
 Archipelago:AddBouncedHandler("bounce handler", onBounce)
-
-if AUTOTRACKER_ENABLE_ITEM_TRACKING then
-	Archipelago:AddItemHandler("item handler", onItem)
-end
-
-if AUTOTRACKER_ENABLE_LOCATION_TRACKING then
-	Archipelago:AddLocationHandler("location handler", onLocation)
-end
+Archipelago:AddItemHandler("item handler", onItem)
+Archipelago:AddLocationHandler("location handler", onLocation)
 
 -- Archipelago:AddScoutHandler("scout handler", onScout)
 
