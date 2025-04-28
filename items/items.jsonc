@@ -143,6 +143,94 @@
     ]
   },
   {
+    "name": "Rocket Jumps",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "codes": "rocket_jumps_option",
+    "stages": [
+      {
+        "img": "images/checks/Rocket_Jumps_0.png",
+        "codes": "rocket_jumps_off",
+        "inherit_codes": false,
+        "name": "Rocket Jumps - Off"
+      },
+      {
+        "img": "images/items/Rocket_Jumps.png",
+        "codes": "rocket_jumps_on",
+        "inherit_codes": false,
+        "name": "Rocket Jumps - On"
+      }
+    ]
+  },
+  {
+    "name": "Precise Tricks",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "codes": "precise_tricks_option",
+    "stages": [
+      {
+        "img": "images/checks/Precise_Tricks_0.png",
+        "codes": "precise_tricks_off",
+        "inherit_codes": false,
+        "name": "Precise Tricks - Off"
+      },
+      {
+        "img": "images/items/Precise_Tricks.png",
+        "codes": "precise_tricks_on",
+        "inherit_codes": false,
+        "name": "Precise Tricks - On"
+      }
+    ]
+  },
+  {
+    "name": "Water Mech",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "codes": "water_mech_option",
+    "stages": [
+      {
+        "img": "images/checks/Water_Mech_0.png",
+        "codes": "water_mech_off",
+        "inherit_codes": false,
+        "name": "Water Mech - Off"
+      },
+      {
+        "img": "images/items/Water_Mech.png",
+        "codes": "water_mech_on",
+        "inherit_codes": false,
+        "name": "Water Mech - On"
+      }
+    ]
+  },
+  {
+    "name": "Small Mech",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "codes": "small_mech_option",
+    "stages": [
+      {
+        "img": "images/checks/Small_Mech_0.png",
+        "codes": "small_mech_off",
+        "inherit_codes": false,
+        "name": "Small Mech - Off"
+      },
+      {
+        "img": "images/items/Small_Mech.png",
+        "codes": "small_mech_on",
+        "inherit_codes": false,
+        "name": "Small Mech - On"
+      }
+    ]
+  },
+  {
     "name": "Auto Tab",
     "type": "progressive",
     "allow_disabled": false,

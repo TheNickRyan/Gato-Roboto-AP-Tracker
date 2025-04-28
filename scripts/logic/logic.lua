@@ -52,3 +52,55 @@ function has_ventilation_event(n)
     end
     return 0 -- 0 => no access
 end
+
+function rocket_jumps()
+    local v = Tracker:FindObjectForCode("rocket_jumps_option")
+    ---@cast v JsonItem
+    local val = (v.CurrentStage == 1)
+    if ENABLE_DEBUG_LOG then
+        print(string.format("called rocket_jumps: count: %s, n: %s, val: %s", count, n, val))
+    end
+    if val then
+        return 1 -- 1 => access is in logic
+    end
+    return 0 -- 0 => no access
+end
+
+function precise_tricks()
+    local v = Tracker:FindObjectForCode("precise_tricks_option")
+    ---@cast v JsonItem
+    local val = (v.CurrentStage == 1)
+    if ENABLE_DEBUG_LOG then
+        print(string.format("called precise_tricks: count: %s, n: %s, val: %s", count, n, val))
+    end
+    if val then
+        return 1 -- 1 => access is in logic
+    end
+    return 0 -- 0 => no access
+end
+
+function water_mech()
+    local v = Tracker:FindObjectForCode("water_mech_option")
+    ---@cast v JsonItem
+    local val = (v.CurrentStage == 1)
+    if ENABLE_DEBUG_LOG then
+        print(string.format("called water_mech: count: %s, n: %s, val: %s", count, n, val))
+    end
+    if val then
+        return 1 -- 1 => access is in logic
+    end
+    return 0 -- 0 => no access
+end
+
+function small_mech()
+    local v = Tracker:FindObjectForCode("small_mech_option")
+    ---@cast v JsonItem
+    local val = (v.CurrentStage == 1)
+    if ENABLE_DEBUG_LOG then
+        print(string.format("called small_mech: count: %s, n: %s, val: %s", count, n, val))
+    end
+    if val then
+        return 1 -- 1 => access is in logic
+    end
+    return 0 -- 0 => no access
+end

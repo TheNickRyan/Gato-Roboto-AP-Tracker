@@ -41,7 +41,8 @@
       {
         "name": "East Healthkit",
         "access_rules": [
-          "missile"
+          "missile",
+          "$rocket_jumps"
         ],
         "sections": [
           {
@@ -81,7 +82,8 @@
       {
         "name": "Nicotine Cartridge",
         "access_rules": [
-          "missile,spin_jump"
+          "missile,spin_jump",
+          "$rocket_jumps"
         ],
         "sections": [
           {
@@ -101,7 +103,8 @@
       {
         "name": "Decoder",
         "access_rules": [
-          "missile,spin_jump,$has_aqueducts_event|3,$has_heater_core_event|3,$has_ventilation_event|3"
+          "missile,spin_jump,$has_aqueducts_event|3,$has_heater_core_event|3,$has_ventilation_event|3",
+          "missile,spin_jump,$rocket_jumps,$precise_tricks"
         ],
         "sections": [
           {
@@ -129,7 +132,8 @@
       {
         "name": "West Healthkit",
         "access_rules": [
-          "spin_jump"
+          "spin_jump",
+          "$rocket_jumps"
         ],
         "sections": [
           {
@@ -149,7 +153,8 @@
       {
         "name": "East Healthkit",
         "access_rules": [
-          "spin_jump"
+          "spin_jump",
+          "$rocket_jumps"
         ],
         "sections": [
           {
@@ -169,7 +174,8 @@
       {
         "name": "Coffee Stain Cartridge",
         "access_rules": [
-          "$has_aqueducts_event|2"
+          "$has_aqueducts_event|2",
+          "$water_mech"
         ],
         "sections": [
           {
@@ -189,7 +195,8 @@
       {
         "name": "Urine Cartridge",
         "access_rules": [
-          "spin_jump"
+          "spin_jump",
+          "$precise_tricks"
         ],
         "sections": [
           {
@@ -209,7 +216,10 @@
       {
         "name": "Swamp Matcha Cartridge",
         "access_rules": [
-          "$has_ventilation_event|3"
+          "$has_ventilation_event|3,spin_jump",
+          "$has_ventilation_event|3,$rocket_jumps",
+          "$precise_tricks,spin_jump",
+          "$precise_tricks,$rocket_jumps"
         ],
         "sections": [
           {
@@ -268,7 +278,8 @@
       {
         "name": "West Healthkit",
         "access_rules": [
-          "$has_aqueducts_event|1"
+          "$has_aqueducts_event|1",
+          "$water_mech"
         ],
         "sections": [
           {
@@ -426,7 +437,8 @@
       {
         "name": "Progressive Aqueducts 3",
         "access_rules": [
-          "$has_aqueducts_event|2"
+          "$has_aqueducts_event|2",
+          "$has_aqueducts_event|2,$rocket_jumps"
         ],
         "sections": [
           {
@@ -448,13 +460,15 @@
   {
     "name": "Heater Core",
     "access_rules": [
-      "spin_jump"
+      "spin_jump",
+      "$rocket_jumps"
     ],
     "children": [
       {
         "name": "West Healthkit",
         "access_rules": [
-          "$has_heater_core_event|3"
+          "$has_heater_core_event|3",
+          "$rocket_jumps"
         ],
         "sections": [
           {
@@ -474,7 +488,8 @@
       {
         "name": "East Healthkit",
         "access_rules": [
-          "$has_heater_core_event|3"
+          "$has_heater_core_event|3",
+          "$rocket_jumps"
         ],
         "sections": [
           {
@@ -494,7 +509,8 @@
       {
         "name": "Virtual Cat Cartridge",
         "access_rules": [
-          "$has_heater_core_event|3"
+          "$has_heater_core_event|3",
+          "$rocket_jumps"
         ],
         "sections": [
           {
@@ -514,7 +530,8 @@
       {
         "name": "Meowtrix Cartridge",
         "access_rules": [
-          "$has_heater_core_event|3"
+          "$has_heater_core_event|3",
+          "$rocket_jumps"
         ],
         "sections": [
           {
@@ -534,7 +551,8 @@
       {
         "name": "Chewed Gum Cartridge",
         "access_rules": [
-          "$has_heater_core_event|3"
+          "$has_heater_core_event|3",
+          "$rocket_jumps"
         ],
         "sections": [
           {
@@ -554,7 +572,8 @@
       {
         "name": "Coolant",
         "access_rules": [
-          "$has_heater_core_event|3"
+          "$has_heater_core_event|3",
+          "$rocket_jumps"
         ],
         "sections": [
           {
@@ -574,7 +593,8 @@
       {
         "name": "Phase",
         "access_rules": [
-          "$has_heater_core_event|1,$has_heater_core_event|2"
+          "$has_heater_core_event|2",
+          "$rocket_jumps"
         ],
         "sections": [
           {
@@ -654,7 +674,8 @@
   {
     "name": "Ventilation",
     "access_rules": [
-      "$has_aqueducts_event|3,$has_heater_core_event|3"
+      "$has_aqueducts_event|3,$has_heater_core_event|3",
+      "$has_aqueducts_event|3,$small_mech"
     ],
     "children": [
       {
@@ -800,7 +821,7 @@
   {
     "name": "Incubator",
     "access_rules": [
-      "decoder"
+      "$has_aqueducts_event|3,$has_heater_core_event|3,$has_ventilation_event|3,decoder"
     ],
     "children": [
       {
@@ -845,9 +866,7 @@
   },
   {
     "name": "Laboratory",
-    "access_rules": [
-      "decoder"
-    ],
+    "access_rules": [],
     "children": [
       {
         "name": "Completion",

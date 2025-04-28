@@ -1,0 +1,35 @@
+{
+  "options_grid": {
+    "type": "array",
+    "orientation": "vertical",
+    "margin": "0,0",
+    "content": [
+      {
+        "type": "array",
+        "orientation": "vertical",
+        "margin": "0,0",
+        "content": [
+          {
+            "type": "itemgrid",
+            "item_margin": "10,10",
+            "h_alignment": "left",
+            "rows": [
+              [
+                "rocket_jumps_option"
+              ],
+              [
+                "precise_tricks_option"
+              ],
+              [
+                "water_mech_option"
+              ],
+              [
+                "small_mech_option"
+              ]
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

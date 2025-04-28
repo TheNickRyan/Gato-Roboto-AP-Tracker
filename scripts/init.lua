@@ -9,6 +9,7 @@ Tracker:AddLocations("locations/locations.jsonc")
 
 -- Layout
 Tracker:AddLayouts("layouts/items.jsonc")
+Tracker:AddLayouts("layouts/options.jsonc")
 Tracker:AddLayouts("layouts/pack_settings.jsonc")
 Tracker:AddLayouts("layouts/tracker.jsonc")
 Tracker:AddLayouts("layouts/broadcast.jsonc")

@@ -5,7 +5,7 @@
   "package_uid": "gatoroboto_ap_pack",
   "author": "TheNickRyan",
   "min_poptracker_version": "0.25.9",
-  "target_poptracker_version": "0.28.0",
+  "target_poptracker_version": "0.31.0",
   "variants": {
     "standard": {
       "display_name": " Map Tracker",

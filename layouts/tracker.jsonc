@@ -21,6 +21,15 @@
             },
             {
               "type": "group",
+              "header": "Options",
+              "dock": "left",
+              "content": {
+                "type": "layout",
+                "key": "options_grid"
+              }
+            },
+            {
+              "type": "group",
               "header": "Pack Settings",
               "dock": "left",
               "content": {
