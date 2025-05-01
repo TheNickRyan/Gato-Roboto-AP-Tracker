@@ -123,6 +123,7 @@ function onClear(slot_data)
 	for key, value in pairs(slot_data) do
 		if SLOT_CODES[key] then
 			local object = Tracker:FindObjectForCode(SLOT_CODES[key].code)
+			---@cast object JsonItem
 			if object then
 				if SLOT_CODES[key].type == "toggle" then
 					object.Active = value

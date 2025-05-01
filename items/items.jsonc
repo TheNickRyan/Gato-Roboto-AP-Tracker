@@ -48,10 +48,10 @@
     "codes": "hopper"
   },
   {
-    "name": "Completion",
+    "name": "Victory",
     "type": "toggle",
     "img": "images/items/Completion.png",
-    "codes": "completion"
+    "codes": "victory"
   },
   {
 		"name": "Cartridges",

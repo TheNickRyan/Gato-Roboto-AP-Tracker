@@ -32,9 +32,9 @@ LOCATION_MAPPING = {
 	-- Heater Core
 	[BASE_LOCATION_ID + 00417] = { { "@Heater Core/West Healthkit/" } },
 	[BASE_LOCATION_ID + 01713] = { { "@Heater Core/East Healthkit/" } },
-	[BASE_LOCATION_ID + 01119] = { { "@Heater Core/Virtual Cat Cartridge/" } },
+	[BASE_LOCATION_ID + 01318] = { { "@Heater Core/Virtual Cat Cartridge/" } },
 	[BASE_LOCATION_ID + 00414] = { { "@Heater Core/Meowtrix Cartridge/" } },
-	[BASE_LOCATION_ID + 01915] = { { "@Heater Core/Chewed Gum Cartridge/" } },
+	[BASE_LOCATION_ID + 01916] = { { "@Heater Core/Chewed Gum Cartridge/" } },
 	[BASE_LOCATION_ID + 00113] = { { "@Heater Core/Coolant/" } },
 	[BASE_LOCATION_ID + 01114] = { { "@Heater Core/Phase/" } },
 	[BASE_LOCATION_ID + 00019] = { { "@Heater Core/Progressive Heater Core 1/" } },
@@ -55,5 +55,5 @@ LOCATION_MAPPING = {
 	[BASE_LOCATION_ID + 01514] = { { "@Incubator/Tamagato Cartridge/" } },
 
 	-- Laboratory
-	[BASE_LOCATION_ID + 01319] = { { "@Laboratory/Completion/" } },
+	[BASE_LOCATION_ID + 01319] = { { "@Laboratory/Victory/" } },
 }

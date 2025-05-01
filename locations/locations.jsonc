@@ -42,7 +42,7 @@
         "name": "East Healthkit",
         "access_rules": [
           "missile",
-          "$rocket_jumps"
+          "missile,$rocket_jumps"
         ],
         "sections": [
           {
@@ -83,7 +83,7 @@
         "name": "Nicotine Cartridge",
         "access_rules": [
           "missile,spin_jump",
-          "$rocket_jumps"
+          "missile,$rocket_jumps"
         ],
         "sections": [
           {
@@ -467,8 +467,7 @@
       {
         "name": "West Healthkit",
         "access_rules": [
-          "$has_heater_core_event|3",
-          "$rocket_jumps"
+          "$has_heater_core_event|3"
         ],
         "sections": [
           {
@@ -488,8 +487,7 @@
       {
         "name": "East Healthkit",
         "access_rules": [
-          "$has_heater_core_event|3",
-          "$rocket_jumps"
+          "$has_heater_core_event|3"
         ],
         "sections": [
           {
@@ -509,8 +507,7 @@
       {
         "name": "Virtual Cat Cartridge",
         "access_rules": [
-          "$has_heater_core_event|3",
-          "$rocket_jumps"
+          "$has_heater_core_event|3"
         ],
         "sections": [
           {
@@ -530,8 +527,7 @@
       {
         "name": "Meowtrix Cartridge",
         "access_rules": [
-          "$has_heater_core_event|3",
-          "$rocket_jumps"
+          "$has_heater_core_event|3"
         ],
         "sections": [
           {
@@ -551,8 +547,7 @@
       {
         "name": "Chewed Gum Cartridge",
         "access_rules": [
-          "$has_heater_core_event|3",
-          "$rocket_jumps"
+          "$has_heater_core_event|3"
         ],
         "sections": [
           {
@@ -572,8 +567,7 @@
       {
         "name": "Coolant",
         "access_rules": [
-          "$has_heater_core_event|3",
-          "$rocket_jumps"
+          "$has_heater_core_event|3"
         ],
         "sections": [
           {
@@ -593,8 +587,7 @@
       {
         "name": "Phase",
         "access_rules": [
-          "$has_heater_core_event|2",
-          "$rocket_jumps"
+          "$has_heater_core_event|2"
         ],
         "sections": [
           {
@@ -866,10 +859,12 @@
   },
   {
     "name": "Laboratory",
-    "access_rules": [],
+    "access_rules": [
+      "$has_aqueducts_event|3,$has_heater_core_event|3,$has_ventilation_event|3,decoder"
+    ],
     "children": [
       {
-        "name": "Completion",
+        "name": "Victory",
         "access_rules": [],
         "sections": [
           {
